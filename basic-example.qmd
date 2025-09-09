@@ -80,13 +80,14 @@ These findings highlight how public policy and mobility infrastructure shape out
 ![](figs/Picture 2.jpg){#fig-trails-b fig-cap="(b) Trail type distribution by year" width=80%}
 
 See Lisbon's touring map in @fig-lisbon
-	•	Rossio Square / Praça do Comércio: Walk 8 min → Lisbon Cathedral (Sé de Lisboa)
-	•	Lisbon Cathedral:Walk 7 min → Santa Justa Lift
-	•	Santa Justa Lift: Walk 11 min → Monument to the Discoveries
-	•	Monument to the Discoveries: Walk 12 min → Belém Tower
-	•	Belém Tower: Walk 16 min → Jerónimos Monastery
-	•	Jerónimos Monastery: Walk 3 min → Pastéis de Belém (famous custard tart shop)
-	
+
+- Rossio Square / Praça do Comércio: Walk 8 min → Lisbon Cathedral (Sé de Lisboa)
+- Lisbon Cathedral:Walk 7 min → Santa Justa Lift
+- Santa Justa Lift: Walk 11 min → Monument to the Discoveries
+- Monument to the Discoveries: Walk 12 min → Belém Tower
+- Belém Tower: Walk 16 min → Jerónimos Monastery
+- Jerónimos Monastery: Walk 3 min → Pastéis de Belém (famous custard tart shop)
+
 ![](figs/mindmap.jpg){#fig-lisbon fig-cap="(c) Lisbon" width=80%}
 
 
