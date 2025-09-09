@@ -1,8 +1,101 @@
 ---
-title: "My First Quarto Doc"
-format: html
+title: "Beyond Spatial Proximity: A Temporal Accessibility Index for Equitable Nature Access in Bavaria’s Hiking Trails"
+author:
+  - name: "Yuhan Jiang"
+    affiliation: "Chair of Cartography and Visual Analytics, Technical University of Munich, Germany"
+    email: "yuhan.jiang@tum.de"
+  - name: "Peng Luo"
+    affiliation: "Senseable City Lab, Massachusetts Institute of Technology, Cambridge, USA"
+corresponding-author: "Yuhan Jiang"
+format:
+  html:
+    toc: true
+    number-sections: true
+  pdf:
+    toc: true
+    number-sections: true
+bibliography: references.bib
+link-citations: true
+execute:
+  warning: true
+  message: true
+lang: en
 ---
 
-# Hello Quarto!
+# Keywords
 
-This is my first Quarto document 🚀
+temporal accessibility, public transit schedules, intra-regional equity, equitable nature access
+
+# Abstract
+
+As a culturally enriching and health-promoting activity [@Kim2019; @Santarem2015], hiking has been popular among urban residents, particularly post-COVID-19 [@Griffiths2020]. Equitable access to natural environments significantly influences physiological, psychological, and immunological well-being [@Yin2023]. However, traditional accessibility metrics primarily emphasize spatial proximity while overlooking critical temporal constraints such as weekday evening availability, public transport schedules, and daylight hours. These hidden temporal barriers may disproportionately exclude marginalized groups (e.g., caregivers and shift workers) from accessing nearby trails, even in geographically compact regions.
+
+To address these limitations, this study focuses on weekday evening accessibility during summer months when longer daylight and favorable weather provide enhanced opportunities for outdoor activities. We introduce a refined **Temporal Accessibility Index (TAI)** to evaluate trails reachable from urban centers on weekday evenings, emphasizing public transport connectivity.
+
+Using Munich, Germany—a city with a dense working population and direct proximity to Alpine hiking areas—as a case study, we assess trail feasibility based on transit schedules, daylight availability, and trail duration. We analyze **32,953** trails from Wikiloc (<https://www.wikiloc.com>), a leading crowdsourced platform with over **14 million** global trails and **11.3 million** active users. Key variables are listed in Table @tbl-data. Trail lengths range from **0.0 m** to over **1,168,232 km**, with elevation gains/losses up to **135,216.9 m**, indicating large variation in physical demand and time requirements.
+
+# Data Description
+
+```{r}
+#| label: tbl-data
+#| tbl-cap: "Hiking Trail Data Attributes"
+#| echo: false
+
+data.frame(
+  Type = c(
+    "Origin-destination coordinates",
+    "Trail length",
+    "Elevation profiles",
+    "Duration",
+    "Trail type",
+    "Difficulty",
+    "Upload timestamps",
+    "Trail rank"
+  ),
+  Description = c(
+    "Geographic coordinates marking the start and end points of the trail.",
+    "The total distance of the trail.",
+    "Indicator reflecting difficulty based on elevation changes.",
+    "Used to calculate the required time window for completing the trail.",
+    "Loop (returns to start) vs One Way (requires transport arrangements).",
+    "Easy, Moderate, Difficult, Very Difficult, Experts Only.",
+    "Time period during which the trail data was uploaded (2002–2024).",
+    "Higher score indicates greater popularity among users."
+  )
+)
+```
+
+
+Preliminary analysis of hiking data is presented in Figures.  
+A marked increase in participation is observed in 2020 and 2024 ( @fig-trails-a).  
+The 2020 surge coincides with post-COVID-19, suggesting heightened interest in outdoor recreation following lockdowns and rising health awareness.  
+The increase in 2024 follows the introduction of Germany’s €49 monthly public transportation ticket in 2023, which substantially lowered travel costs and improved access to natural areas.  
+
+Seasonal patterns are also evident, with hiking activity peaking in spring and summer, likely driven by longer daylight hours and favorable weather conditions.  
+Changes in trail usage patterns are shown in @fig-trails-b, where a growing preference for one-way routes—those with different start and end points—indicates increasing dependence on public transport.  
+These findings highlight how public policy and mobility infrastructure shape outdoor recreational behavior.
+
+![](figs/Picture 1.jpg){#fig-trails-a fig-cap="(a) Recorded data distribution by year and season" width=80%}
+
+![](figs/Picture 2.jpg){#fig-trails-b fig-cap="(b) Trail type distribution by year" width=80%}
+
+See Lisbon's touring map in @fig-lisbon
+	•	Rossio Square / Praça do Comércio: Walk 8 min → Lisbon Cathedral (Sé de Lisboa)
+	•	Lisbon Cathedral:Walk 7 min → Santa Justa Lift
+	•	Santa Justa Lift: Walk 11 min → Monument to the Discoveries
+	•	Monument to the Discoveries: Walk 12 min → Belém Tower
+	•	Belém Tower: Walk 16 min → Jerónimos Monastery
+	•	Jerónimos Monastery: Walk 3 min → Pastéis de Belém (famous custard tart shop)
+	
+![](figs/mindmap.jpg){#fig-lisbon fig-cap="(c) Lisbon" width=80%}
+
+
+# Conclusion
+
+Prioritizing public transport–based evening access reveals policy-relevant levers for equitable nature access. Findings can inform urban and transit planning to support after-work outdoor opportunities without increasing car dependency.
+
+
+# References
+
+
+

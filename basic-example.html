@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Yuhan Jiang">
+<meta name="author" content="Peng Luo">
 
-<title>My First Quarto Doc</title>
+<title>Beyond Spatial Proximity: A Temporal Accessibility Index for Equitable Nature Access in Bavaria’s Hiking Trails</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="basic-example_files/libs/clipboard/clipboard.min.js"></script>
@@ -37,22 +59,55 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="fullcontent">
+<body>
 
 <div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
-
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#keywords" id="toc-keywords" class="nav-link active" data-scroll-target="#keywords"><span class="header-section-number">1</span> Keywords</a></li>
+  <li><a href="#abstract" id="toc-abstract" class="nav-link" data-scroll-target="#abstract"><span class="header-section-number">2</span> Abstract</a></li>
+  <li><a href="#data-description" id="toc-data-description" class="nav-link" data-scroll-target="#data-description"><span class="header-section-number">3</span> Data Description</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">4</span> Conclusion</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">5</span> References</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="basic-example.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+</div>
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">My First Quarto Doc</h1>
+<h1 class="title">Beyond Spatial Proximity: A Temporal Accessibility Index for Equitable Nature Access in Bavaria’s Hiking Trails</h1>
 </div>
 
 
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliations</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Yuhan Jiang <a href="mailto:yuhan.jiang@tum.de" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Chair of Cartography and Visual Analytics, Technical University of Munich, Germany
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Peng Luo </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Senseable City Lab, Massachusetts Institute of Technology, Cambridge, USA
+          </p>
+      </div>
+  </div>
 
 <div class="quarto-title-meta">
 
-    
+      
   
     
   </div>
@@ -62,12 +117,110 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="hello-quarto" class="level1">
-<h1>Hello Quarto!</h1>
-<p>This is my first Quarto document 🚀</p>
+<section id="keywords" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Keywords</h1>
+<p>temporal accessibility, public transit schedules, intra-regional equity, equitable nature access</p>
+</section>
+<section id="abstract" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Abstract</h1>
+<p>As a culturally enriching and health-promoting activity <span class="citation" data-cites="Kim2019 Santarem2015">(<a href="#ref-Kim2019" role="doc-biblioref">Kim and Miller 2019</a>; <a href="#ref-Santarem2015" role="doc-biblioref">Santar ’em, Silva, and Santos 2015</a>)</span>, hiking has been popular among urban residents, particularly post-COVID-19 <span class="citation" data-cites="Griffiths2020">(<a href="#ref-Griffiths2020" role="doc-biblioref">Griffiths 2020</a>)</span>. Equitable access to natural environments significantly influences physiological, psychological, and immunological well-being <span class="citation" data-cites="Yin2023">(<a href="#ref-Yin2023" role="doc-biblioref">Yin, Chen, and Liu 2023</a>)</span>. However, traditional accessibility metrics primarily emphasize spatial proximity while overlooking critical temporal constraints such as weekday evening availability, public transport schedules, and daylight hours. These hidden temporal barriers may disproportionately exclude marginalized groups (e.g., caregivers and shift workers) from accessing nearby trails, even in geographically compact regions.</p>
+<p>To address these limitations, this study focuses on weekday evening accessibility during summer months when longer daylight and favorable weather provide enhanced opportunities for outdoor activities. We introduce a refined <strong>Temporal Accessibility Index (TAI)</strong> to evaluate trails reachable from urban centers on weekday evenings, emphasizing public transport connectivity.</p>
+<p>Using Munich, Germany—a city with a dense working population and direct proximity to Alpine hiking areas—as a case study, we assess trail feasibility based on transit schedules, daylight availability, and trail duration. We analyze <strong>32,953</strong> trails from Wikiloc (<a href="https://www.wikiloc.com" class="uri">https://www.wikiloc.com</a>), a leading crowdsourced platform with over <strong>14 million</strong> global trails and <strong>11.3 million</strong> active users. Key variables are listed in Table <a href="#tbl-data" class="quarto-xref">Table&nbsp;1</a>. Trail lengths range from <strong>0.0 m</strong> to over <strong>1,168,232 km</strong>, with elevation gains/losses up to <strong>135,216.9 m</strong>, indicating large variation in physical demand and time requirements.</p>
+</section>
+<section id="data-description" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Data Description</h1>
+<div id="tbl-data" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-data-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Hiking Trail Data Attributes
+</figcaption>
+<div aria-describedby="tbl-data-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output cell-output-stdout">
+<pre><code>                            Type
+1 Origin-destination coordinates
+2                   Trail length
+3             Elevation profiles
+4                       Duration
+5                     Trail type
+6                     Difficulty
+7              Upload timestamps
+8                     Trail rank
+                                                            Description
+1 Geographic coordinates marking the start and end points of the trail.
+2                                      The total distance of the trail.
+3           Indicator reflecting difficulty based on elevation changes.
+4  Used to calculate the required time window for completing the trail.
+5 Loop (returns to start) vs One Way (requires transport arrangements).
+6              Easy, Moderate, Difficult, Very Difficult, Experts Only.
+7     Time period during which the trail data was uploaded (2002–2024).
+8                Higher score indicates greater popularity among users.</code></pre>
+</div>
+</div>
+</figure>
+</div>
+<p>Preliminary analysis of hiking data is presented in Figures.<br>
+A marked increase in participation is observed in 2020 and 2024 ( <a href="#fig-trails-a" class="quarto-xref">Figure&nbsp;1</a>).<br>
+The 2020 surge coincides with post-COVID-19, suggesting heightened interest in outdoor recreation following lockdowns and rising health awareness.<br>
+The increase in 2024 follows the introduction of Germany’s €49 monthly public transportation ticket in 2023, which substantially lowered travel costs and improved access to natural areas.</p>
+<p>Seasonal patterns are also evident, with hiking activity peaking in spring and summer, likely driven by longer daylight hours and favorable weather conditions.<br>
+Changes in trail usage patterns are shown in <a href="#fig-trails-b" class="quarto-xref">Figure&nbsp;2</a>, where a growing preference for one-way routes—those with different start and end points—indicates increasing dependence on public transport.<br>
+These findings highlight how public policy and mobility infrastructure shape outdoor recreational behavior.</p>
+<div id="fig-trails-a" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-cap="(a) Recorded data distribution by year and season" width="80%">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-trails-a-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figs/Picture%201.jpg" id="fig-trails-a" class="img-fluid figure-img" style="width:80.0%" data-fig-cap="(a) Recorded data distribution by year and season">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-trails-a-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1
+</figcaption>
+</figure>
+</div>
+<div id="fig-trails-b" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-cap="(b) Trail type distribution by year" width="80%">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-trails-b-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figs/Picture%202.jpg" id="fig-trails-b" class="img-fluid figure-img" style="width:80.0%" data-fig-cap="(b) Trail type distribution by year">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-trails-b-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2
+</figcaption>
+</figure>
+</div>
+<p>See Lisbon’s touring map in <a href="#fig-lisbon" class="quarto-xref">Figure&nbsp;3</a> • Rossio Square / Praça do Comércio: Walk 8 min → Lisbon Cathedral (Sé de Lisboa) • Lisbon Cathedral:Walk 7 min → Santa Justa Lift • Santa Justa Lift: Walk 11 min → Monument to the Discoveries • Monument to the Discoveries: Walk 12 min → Belém Tower • Belém Tower: Walk 16 min → Jerónimos Monastery • Jerónimos Monastery: Walk 3 min → Pastéis de Belém (famous custard tart shop)</p>
+<div id="fig-lisbon" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-cap="(c) Lisbon" width="80%">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-lisbon-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figs/mindmap.jpg" id="fig-lisbon" class="img-fluid figure-img" style="width:80.0%" data-fig-cap="(c) Lisbon">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-lisbon-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="conclusion" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Conclusion</h1>
+<p>Prioritizing public transport–based evening access reveals policy-relevant levers for equitable nature access. Findings can inform urban and transit planning to support after-work outdoor opportunities without increasing car dependency.</p>
+</section>
+<section id="references" class="level1 unnumbered" data-number="5">
+
+
 </section>
 
-</main>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">5 References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Griffiths2020" class="csl-entry" role="listitem">
+Griffiths, J. 2020. <span>“Maintaining Hong Kong’s 400 Miles of Hiking Trails, One Step at a Time.”</span> <em>CNN Travel</em>.
+</div>
+<div id="ref-Kim2019" class="csl-entry" role="listitem">
+Kim, G., and P. A. Miller. 2019. <span>“The Impact of Green Infrastructure on Human Health and Well-Being: The Example of the Huckleberry Trail and the Heritage Community Park and Natural Area in Blacksburg, Virginia.”</span> <em>Sustainable Cities and Society</em> 48: 1–9.
+</div>
+<div id="ref-Santarem2015" class="csl-entry" role="listitem">
+Santar ’em, F., R. Silva, and P. Santos. 2015. <span>“Assessing Ecotourism Potential of Hiking Trails: A Framework to Incorporate Ecological and Cultural Features and Seasonality.”</span> <em>Tourism Management Perspectives</em> 16: 190–206.
+</div>
+<div id="ref-Yin2023" class="csl-entry" role="listitem">
+Yin, S., W. Y. Chen, and C. Liu. 2023. <span>“Urban Forests as a Strategy for Transforming Towards Healthy Cities.”</span> <em>Urban Forestry<br>
+&amp; Urban Greening</em> 81: 1–5.
+</div>
+</div></section></div></main>
 <!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
